@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor de Remeras de Fútbol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Personaliza tu Remera de Fútbol</h1>
+
+    <div id="editor">
+        <div id="shirt-preview">
+            <canvas id="shirtCanvas" width="500" height="600"></canvas>
+        </div>
+
+        <div id="controls">
+            <label>Color principal:
+                <input type="color" id="mainColor" value="#FF0000">
+            </label>
+
+            <label>Color de detalles:
+                <input type="color" id="detailColor" value="#FFFFFF">
+            </label>
+
+            <label>Tipo de mangas:
+                <select id="sleeveType">
+                    <option value="short">Corta</option>
+                    <option value="long">Larga</option>
+                </select>
+            </label>
+
+            <label>Nombre:
+                <input type="text" id="playerName" placeholder="Tu nombre">
+            </label>
+
+            <label>Fuente:
+                <select id="fontSelect">
+                    <option value="Arial">Arial</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Courier New">Courier New</option>
+                </select>
+            </label>
+
+            <label>Número:
+                <input type="number" id="playerNumber" min="0" max="99" placeholder="10">
+            </label>
+
+            <label>Subir logo:
+                <input type="file" id="logoUpload" accept="image/*">
+            </label>
+
+            <button id="saveDesign">Guardar Diseño</button>
+            <button id="downloadDesign">Descargar Diseño</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
