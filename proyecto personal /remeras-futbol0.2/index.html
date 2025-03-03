@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Editor de Remeras de Fútbol</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Editor de Remeras de Fútbol en 3D</h1>
+    </header>
+
+    <main>
+        <section id="canvas-3d">
+            <div id="viewer-container">
+                <canvas id="shirt-viewer"></canvas>
+            </div>
+        </section>
+
+        <section id="controls">
+            <h2>Personaliza tu remera</h2>
+            <label for="colorPicker">Color de la remera:</label>
+            <input type="color" id="colorPicker">
+
+            <label for="uploadLogo">Subir Logo:</label>
+            <input type="file" id="uploadLogo" accept="image/png, image/jpeg">
+
+            <button id="downloadBtn">Descargar Diseño</button>
+        </section>
+
+        <section id="image-search">
+            <h2>Buscar Imágenes</h2>
+            <input type="text" id="searchQuery" placeholder="Buscar en Unsplash, Pexels...">
+            <button id="searchBtn">Buscar</button>
+            <div id="imageResults"></div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
+</body>
+
+</html>
